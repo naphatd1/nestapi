@@ -10,7 +10,7 @@ export class AppController {
   @Get('/')
   getHomeAPI() {
     return {
-      VERSION: '1.0.0.0',
+      VERSION: '1.0.0',
       message: 'NestJS API running...',
     };
   }

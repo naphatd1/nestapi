@@ -18,10 +18,15 @@ export class ProductController {
   }
   @Get('/date')
   getDate() {
-    return { server_date: this.utilityService.getServerDate() };
+    // throw new HttpException(
+    //   'เกิดข้อผิดพลาดแสดงวันที่ไม่ได้',
+    //   HttpStatus.BAD_REQUEST,
+    // );
+    // return { server_date: this.utilityService.getServerDate() };
   }
   @Get('/thaidate')
   getThaiDate() {
+    // throw new BadRequestException('เกิดข้อผิดพลาด แสดงวันที่ไม่ได้');
     return { server_thai_date: this.globalHelperService.getServerThaiDate() };
   }
 }
